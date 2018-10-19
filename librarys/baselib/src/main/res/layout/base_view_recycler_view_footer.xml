@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/footer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/footer_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="14sp"/>
+
+        <ProgressBar
+            android:id="@+id/footer_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:visibility="invisible"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

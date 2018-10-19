@@ -1,0 +1,114 @@
+<resources>
+    <!-- 通用 -->
+    <string name="common_today">Today</string>
+    <string name="common_yesterday">Yesterday</string>
+    <string name="common_year">Year</string>
+    <string name="common_month">Month</string>
+    <string name="common_day">Day</string>
+    <string name="common_hour">Hour</string>
+    <string name="common_minute">Minute</string>
+    <string name="common_second">Second</string>
+
+    <string name="common_known">Got it</string>
+    <string name="common_search">Search</string>
+    <string name="common_skip">Skip</string>
+    <string name="common_complete">Complete</string>
+    <string name="common_confirm">OK</string>
+    <string name="common_submit">Submit</string>
+    <string name="common_save">Save</string>
+    <string name="common_close">Close</string>
+    <string name="common_delete">Delete</string>
+    <string name="common_edit">Edit</string>
+    <string name="common_modify">Modify</string>
+    <string name="common_modify_success">Modify succeeded</string>
+    <string name="common_success">Success</string>
+    <string name="common_fail">Fail</string>
+    <string name="common_join">Join</string>
+    <string name="common_exit">Exit</string>
+    <string name="common_exited">Exited</string>
+    <string name="common_all">All</string>
+    <string name="common_all2">All</string>
+    <string name="common_share">Share</string>
+    <string name="common_select">Select</string>
+    <string name="common_select_all">Select all</string>
+    <string name="common_send">Send</string>
+    <string name="common_relpy">Reply</string>
+    <string name="common_wait">Please wait&#8230;</string>
+    <string name="common_loading">Loading&#8230;</string>
+    <string name="common_reload">Reload</string>
+    <string name="common_back">Back</string>
+    <string name="common_tips">Tips</string>
+    <string name="common_setting">Open</string>
+
+    <string name="common_content_empty">Content can not be empty</string>
+    <string name="common_operation_success">Operation succeeded</string>
+    <string name="common_operation_fail">Operation failed</string>
+
+    <string name="common_login">Login</string>
+    <string name="common_not_login">Logout</string>
+    <string name="common_no_data">No data</string>
+    <string name="common_no_more">No more data</string>
+    <string name="common_param_error">Parameter error</string>
+
+    <string name="common_myself">Me</string>
+    <string name="common_mine">Mine</string>
+
+    <string name="common_repick">Please repick</string>
+    <string name="common_qrcode">QR Code</string>
+    <string name="common_camera">Camera</string>
+    <string name="common_album">Album</string>
+    <string name="common_sys_album">System Album</string>
+    <string name="common_image">Image</string>
+    <string name="common_all_images">All Images</string>
+    <string name="common_select_up_image">Select up to %1$d images</string>
+    <string name="common_save_pic">Save image</string>
+    <string name="common_save_image_path">Save image to&#160;%1$s</string>
+    <string name="common_save_image_path2">Image saved to the folder: %1$s</string>
+    <string name="common_images_preview">Preview Images</string>
+    <string name="common_deny">Deny</string>
+    <string name="common_allow">Allow</string>
+    <string name="common_go_to">Go to</string>
+    <string name="common_give_up">Give up</string>
+    <string name="common_attention">Attention</string>
+    <string name="common_save_fail">%1$s&#160;save failed</string>
+    <string name="common_open_failed">%1$s&#160;open failed</string>
+
+    <!-- permission -->
+    <string name="common_permission_message">Permissions about&#160;%1$s&#160;
+        have been disabled, go to settings?</string>
+    <string name="common_permission_calls">Calls</string>
+    <string name="common_permission_camera">Camera</string>
+    <string name="common_permission_camera_doc">Camera, Storage</string>
+    <string name="common_permission_album_doc">Album, Storage</string>
+    <string name="common_permission_camera_failed">Failed to open the Camera</string>
+    <string name="common_permission_album_failed">Failed to open the Album</string>
+    <string name="common_permission_location">Location</string>
+
+    <!-- number_format start -->
+    <string name="number_format_01">%1$,.2f</string>
+    <string name="number_format_02">%1$,.0f</string>
+    <string name="number_format_03">%1$,d</string>
+
+    <string name="auto_sys">Auto</string>
+    <string name="language">Language</string>
+
+    <string name="common_cancel">cancel</string>
+    <string name="common_floatwindow">floatwindow</string>
+    <string name="common_resume">resume</string>
+
+    <!-- permissions -->
+    <string name="common_title_tips">Please authorize %1$s permissions</string>
+    <string name="message_permission_always_failed">No permission, go to open?</string>
+    <string name="common_permission_resume_message">Please authorize %1$s permissions</string>
+
+    <string name="permission_name_calendar">calendar</string>
+    <string name="permission_name_camera">camera</string>
+    <string name="permission_name_contacts">Address book</string>
+    <string name="permission_name_location">location information</string>
+    <string name="permission_name_microphone">microphone</string>
+    <string name="permission_name_phone">phone</string>
+    <string name="permission_name_sensors">Body sensor</string>
+    <string name="permission_name_sms">SMS</string>
+    <string name="permission_name_storage">storage</string>
+
+</resources>

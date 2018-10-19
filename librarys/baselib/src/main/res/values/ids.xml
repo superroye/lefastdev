@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Glide -->
+    <item name="glide_tag_id" type="id"/>
+
+    <!-- StatusBarUtils -->
+    <item name="statusbarutil_fake_status_bar_view" type="id"/>
+    <item name="statusbarutil_translucent_view" type="id"/>
+
+    <!-- BadgeTabLayout -->
+    <item name="BadgeTabLayout_icon" type="id"/>
+    <item name="BadgeTabLayout_text" type="id"/>
+    <item name="BadgeTabLayout_badge" type="id"/>
+
+</resources>

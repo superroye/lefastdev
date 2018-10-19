@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- BadgeTabLayout-->
+    <declare-styleable name="BadgeTabLayout">
+        <attr name="checkedTab" format="integer" />
+        <attr name="android:orientation" />
+    </declare-styleable>
+
+    <!-- BadgeTabView-->
+    <declare-styleable name="BadgeTabView">
+        <attr name="checked" format="boolean" />
+        <attr name="src" format="reference|color" />
+        <attr name="src_margin" format="dimension" />
+        <attr name="src_marginLeft" format="dimension" />
+        <attr name="src_marginTop" format="dimension" />
+        <attr name="src_marginRight" format="dimension" />
+        <attr name="src_marginBottom" format="dimension" />
+        <attr name="text" format="string" localization="suggested" />
+        <attr name="text_color" format="reference|color" />
+        <attr name="text_size" format="dimension" />
+        <attr name="text_margin" format="dimension" />
+        <attr name="text_marginLeft" format="dimension" />
+        <attr name="text_marginTop" format="dimension" />
+        <attr name="text_marginRight" format="dimension" />
+        <attr name="text_marginBottom" format="dimension" />
+        <attr name="badge_visible" format="boolean" />
+        <attr name="badge_background" format="reference|color" />
+        <attr name="badge_minWH" format="dimension" />
+        <attr name="badge_minWH_withText" format="dimension" />
+        <attr name="badge_text" format="string" localization="suggested" />
+        <attr name="badge_textColor" format="reference|color" />
+        <attr name="badge_textSize" format="dimension" />
+        <attr name="badge_margin" format="dimension" />
+        <attr name="badge_marginLeft" format="dimension" />
+        <attr name="badge_marginTop" format="dimension" />
+        <attr name="badge_marginRight" format="dimension" />
+        <attr name="badge_marginBottom" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+
+
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api "com.android.support:appcompat-v7:${supportLibVersion}"
+    api "com.android.support:design:${supportLibVersion}"
+    api "com.android.support:recyclerview-v7:${supportLibVersion}"
+    api "com.android.support:cardview-v7:${supportLibVersion}"
+
+    api "io.reactivex.rxjava2:rxandroid:${rxandroidVersion}"
+
+    api("android.arch.lifecycle:extensions:${lifecycleVersion}") {
+        exclude group: 'com.android.support', module: 'support-fragment'
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    annotationProcessor "android.arch.lifecycle:compiler:${lifecycleVersion}"
+
+    api("com.yanzhenjie:permission:${andPermissionVersion}") {
+        exclude group: 'com.android.support', module: 'support-fragment'
+    }
+
+    api "com.google.code.gson:gson:${gsonVersion}"
+    api "org.greenrobot:eventbus:${eventbusVersion}"
+    api "com.android.support:multidex:${multidexVersion}"
+
+    api "com.android.support.constraint:constraint-layout:${constraintVersion}"
+
+}

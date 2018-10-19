@@ -1,0 +1,112 @@
+<resources>
+    <!-- 通用 -->
+    <string name="common_today">今天</string>
+    <string name="common_yesterday">昨天</string>
+    <string name="common_year">年</string>
+    <string name="common_month">月</string>
+    <string name="common_day">日</string>
+    <string name="common_hour">时</string>
+    <string name="common_minute">分</string>
+    <string name="common_second">秒</string>
+
+    <string name="common_known">知道了</string>
+    <string name="common_search">搜索</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_skip">跳过</string>
+    <string name="common_complete">完成</string>
+    <string name="common_confirm">确定</string>
+    <string name="common_submit">提交</string>
+    <string name="common_save">保存</string>
+    <string name="common_close">关闭</string>
+    <string name="common_delete">删除</string>
+    <string name="common_edit">编辑</string>
+    <string name="common_modify">修改</string>
+    <string name="common_modify_success">修改成功</string>
+    <string name="common_success">成功</string>
+    <string name="common_fail">失败</string>
+    <string name="common_join">加入</string>
+    <string name="common_exit">退出</string>
+    <string name="common_exited">已退出</string>
+    <string name="common_all">所有</string>
+    <string name="common_all2">全部</string>
+    <string name="common_share">分享</string>
+    <string name="common_select">选择</string>
+    <string name="common_select_all">全选</string>
+    <string name="common_send">发送</string>
+    <string name="common_relpy">回复</string>
+    <string name="common_setting">开启</string>
+    <string name="common_wait">请稍候&#8230;</string>
+    <string name="common_loading">加载中&#8230;</string>
+    <string name="common_reload">重新加载</string>
+    <string name="common_back">后退</string>
+    <string name="common_tips">提示</string>
+    <string name="common_floatwindow">浮窗</string>
+    <string name="common_resume">恢复</string>
+
+    <string name="common_content_empty">内容不能为空</string>
+    <string name="common_operation_success">操作成功</string>
+    <string name="common_operation_fail">操作失败</string>
+
+    <string name="common_login">登录</string>
+    <string name="common_not_login">未登录</string>
+    <string name="common_no_data">暂无数据</string>
+    <string name="common_no_more">没有更多数据</string>
+    <string name="common_param_error">参数错误</string>
+
+    <string name="common_myself">我</string>
+    <string name="common_mine">我的</string>
+
+    <string name="common_repick">重新选择</string>
+    <string name="common_qrcode">二维码</string>
+    <string name="common_camera">相机</string>
+    <string name="common_album">相册</string>
+    <string name="common_image">图片</string>
+
+    <string name="common_deny">拒绝</string>
+    <string name="common_allow">允许</string>
+    <string name="common_go_to">前往</string>
+    <string name="common_give_up">放弃</string>
+    <string name="common_attention">注意</string>
+
+    <string name="common_sys_album">系统相册</string>
+    <string name="common_all_images">所有图片</string>
+    <string name="common_select_up_image">您最多只能选择%1$d张图片</string>
+    <string name="common_save_pic">保存图片</string>
+    <string name="common_save_image_path">图片已保存至%1$s</string>
+    <string name="common_save_image_path2">图片已保存至%1$s文件夹</string>
+    <string name="common_images_preview">图片预览</string>
+    <string name="common_save_fail">%1$s保存失败</string>
+    <string name="common_open_failed">%1$s打开失败</string>
+
+    <!-- permissions -->
+    <string name="common_permission_message">没有%1$s权限，前往开启？</string>
+    <string name="common_permission_resume_message">没有%1$s权限，前往开启？</string>
+    <string name="common_permission_calls">电话</string>
+    <string name="common_permission_camera">相机</string>
+    <string name="common_permission_camera_doc">相机、文件</string>
+    <string name="common_permission_album_doc">相册、文件</string>
+    <string name="common_permission_camera_failed">打开相机失败</string>
+    <string name="common_permission_album_failed">打开相册失败</string>
+    <string name="common_permission_location">位置信息</string>
+    <string name="common_title_tips">请授权%1$s权限</string>
+    <string name="message_permission_always_failed">没有%1$s权限，前往开启？</string>
+
+    <string name="permission_name_calendar">日历</string>
+    <string name="permission_name_camera">相机</string>
+    <string name="permission_name_contacts">通讯录</string>
+    <string name="permission_name_location">位置信息</string>
+    <string name="permission_name_microphone">麦克风</string>
+    <string name="permission_name_phone">电话</string>
+    <string name="permission_name_sensors">身体传感器</string>
+    <string name="permission_name_sms">短信</string>
+    <string name="permission_name_storage">存储空间</string>
+
+    <!-- number_format start -->
+    <string name="number_format_01">%1$,.2f</string>
+    <string name="number_format_02">%1$,.0f</string>
+    <string name="number_format_03">%1$,d</string>
+
+    <string name="auto_sys">跟随系统</string>
+    <string name="language">多语言</string>
+
+</resources>
