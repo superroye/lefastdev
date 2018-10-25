@@ -37,7 +37,7 @@ public final class UIUtils {
     /**
      * 密度转换像素
      * */
-    public static int dip2px(float dipValue) {
+    public static int dp2px(float dipValue) {
         int px = (int) (dipValue * scale + 0.5f);
         return px;
     }
@@ -45,7 +45,7 @@ public final class UIUtils {
     /**
      * 像素转换密度
      * */
-    public static int px2dip(float pxValue) {
+    public static int px2dp(float pxValue) {
         return (int) (pxValue / scale + 0.5f);
     }
 
@@ -58,7 +58,7 @@ public final class UIUtils {
 	 * @return
 	 * @throws
 	 */
-	public static int dpToPx(Context context, float dipValue) {
+	public static int dp2px(Context context, float dipValue) {
 		final float scale = context.getResources().getDisplayMetrics().density;
 		return (int) (dipValue * scale + 0.5f);
 	}
@@ -70,11 +70,11 @@ public final class UIUtils {
 	 * @param dp
 	 * @return
 	 */
-	public static int dpToPx(Resources res, int dp) {
+	public static int dp2px(Resources res, int dp) {
 		return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, res.getDisplayMetrics());
 	}
 
-	public static float pxToDp(Context context, float px) {
+	public static float px2dp(Context context, float px) {
 		final float scale = context.getResources().getDisplayMetrics().density;
 		return px / scale;
 	}

@@ -1,6 +1,6 @@
 package com.zzc.network.response;
 
-import com.zzc.framework.base.listener.IRxObserveDisposer;
+import com.zzc.baselib.ui.listener.IRxObserveDisposer;
 
 public abstract class ResponseObserver<Result> extends BaseResponseObserver<Result, Result> {
 

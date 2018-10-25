@@ -5,8 +5,6 @@ import android.text.TextUtils;
 import android.text.format.DateUtils;
 import android.text.format.Time;
 
-import com.zzc.baselib.base.LibContext;
-
 import java.security.MessageDigest;
 import java.text.DecimalFormat;
 import java.util.Calendar;
@@ -161,7 +159,7 @@ public class StringUtils {
 //        } else {
 //            return yue + "个月前";
 //        }
-        return formatTimeStampString(LibContext.getApp(), timeMs, false);
+        return formatTimeStampString(AppBase.app, timeMs, false);
     }
 
     public static String formatTimeStampString(Context context, long when, boolean fullFormat) {

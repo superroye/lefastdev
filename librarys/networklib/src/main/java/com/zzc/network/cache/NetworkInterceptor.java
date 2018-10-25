@@ -1,6 +1,6 @@
 package com.zzc.network.cache;
 
-import com.zzc.framework.util.NetworkUtils;
+import com.zzc.baselib.util.NetworkUtils;
 
 import java.io.IOException;
 

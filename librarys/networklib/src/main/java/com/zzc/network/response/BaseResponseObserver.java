@@ -1,7 +1,7 @@
 package com.zzc.network.response;
 
-import com.zzc.framework.base.listener.IProgressDialog;
-import com.zzc.framework.base.listener.IRxObserveDisposer;
+import com.zzc.baselib.ui.listener.IProgressDialog;
+import com.zzc.baselib.ui.listener.IRxObserveDisposer;
 
 import java.lang.ref.WeakReference;
 

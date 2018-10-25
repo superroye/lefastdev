@@ -3,9 +3,8 @@ package com.zzc.network.response;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.zzc.framework.base.BaseApplication;
-import com.zzc.framework.base.listener.IProgressDialog;
-import com.zzc.framework.util.NetworkUtils;
+import com.zzc.baselib.ui.listener.IProgressDialog;
+import com.zzc.baselib.util.NetworkUtils;
 
 import java.io.IOException;
 import java.lang.ref.WeakReference;
@@ -60,9 +59,7 @@ public class SupportProcedure<Result extends IHttpResponse, Data> {
             final String showMessage = message;
             //ToastUtils.showToast(showMessage);
         }
-        if (BaseApplication.APP_DEBUG) {
-            Log.e("okhttp", "error", e);
-        }
+        Log.e("okhttp", "error", e);
     }
 
     public void handleResponse(Result result) {

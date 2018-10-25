@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    //标题栏背景
+    <color name="colorPrimary">#FFFFFF</color>
+    //状态栏背景
+    <color name="colorPrimaryDark">#00FFFFFF</color>
+    //按钮文字颜色
+    <color name="colorAccent">@color/a</color>
+
+    //文字颜色
+    <color name="textColorPrimary">@color/text1</color>
+    <color name="textSecondary">@color/text2</color>
+    <color name="textInsignificant">@color/text3</color>
+    <color name="textColorSpecial">@color/a</color>
+
+    <color name="colorStatusbar">#1169EE</color>
+    <color name="colorControlActivated">#333333</color>
+    <color name="statusBarColor">#66FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#FFFFFF</color>
+
+    <color name="textHighLight">@color/colorPrimary</color>
+    <color name="background">#f2f2f2</color>
+    <color name="divider">#ebebeb</color>
+
+    <color name="title">@color/text1</color>
+    <color name="title_background">@color/white</color>
+
+    <color name="widget_background">#f2f2f2</color>
+
+    <color name="text333">#333333</color>
+
+    <color name="text666">#666666</color>
+
+    <color name="text999">#999999</color>
+
+    <color name="text888">#888888</color>
+
+    <color name="text18">#181818</color>
+
+    <color name="bg_btn">@color/a</color>
+
+    <color name="bg_btn_hover">#FFcb00</color>
+
+    <color name="bg_unabled">@color/f</color>
+
+    <color name="bg_green_btn">@color/b</color>
+
+    <color name="color_cursor">#1169EE</color>
+
+    <!--规范-->
+
+
+    <color name="text1">#212121</color>
+
+    <color name="text2">#8c939f</color>
+
+    <color name="text3">#999999</color>
+
+    <color name="text4">#e59311</color>
+
+    <color name="a">#f9de4a</color>
+
+    <color name="b">#62d446</color>
+
+    <color name="c">#e59311</color>
+
+    <color name="d">#ef2b3e</color>
+
+    <color name="e">#9671f4</color>
+
+    <color name="f">#f7f7f7</color>
+</resources>

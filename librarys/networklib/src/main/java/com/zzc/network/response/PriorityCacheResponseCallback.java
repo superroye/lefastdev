@@ -1,8 +1,8 @@
 package com.zzc.network.response;
 
-import com.zzc.framework.base.listener.IProgressDialog;
-import com.zzc.framework.support.net.cache.CacheStrategyUtil;
-import com.zzc.framework.util.NetworkUtils;
+import com.zzc.baselib.ui.listener.IProgressDialog;
+import com.zzc.baselib.util.NetworkUtils;
+import com.zzc.network.cache.CacheStrategyUtil;
 
 import io.reactivex.functions.Consumer;
 import retrofit2.Call;

@@ -5,7 +5,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
 
-import com.zzc.baselib.base.LibContext;
+import com.zzc.baselib.base.AppBase;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
@@ -58,7 +58,7 @@ public class SignatureUtils {
 
     public static String get() {
         if (signature == null || signature.isEmpty())
-            init(LibContext.getApp());
+            init(AppBase.app);
         return signature;
     }
 

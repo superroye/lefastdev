@@ -1,7 +1,7 @@
 package com.zzc.network.response;
 
-import com.zzc.framework.support.net.support.ClearTokenEvent;
-import com.zzc.framework.support.net.support.NeedQuickLoginEvent;
+import com.zzc.network.support.ClearTokenEvent;
+import com.zzc.network.support.NeedQuickLoginEvent;
 
 import org.greenrobot.eventbus.EventBus;
 

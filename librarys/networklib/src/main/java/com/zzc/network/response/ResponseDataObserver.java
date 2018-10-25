@@ -1,7 +1,6 @@
 package com.zzc.network.response;
 
-import com.zzc.framework.BuildConfig;
-import com.zzc.framework.base.listener.IRxObserveDisposer;
+import com.zzc.baselib.ui.listener.IRxObserveDisposer;
 
 /**
  * Created by Roye on 2016/12/8.
@@ -26,9 +25,6 @@ public abstract class ResponseDataObserver<Data> extends BaseResponseObserver<Ht
     public void onFailed(HttpResponse<Data> result) {
         DefaultResponseCodeHandle.handle(result);
         if (result.getMsg() != null) {
-            if (BuildConfig.DEBUG) {
-                //ToastUtils.showToast(result.getMsg());
-            }
         }
     }
 }

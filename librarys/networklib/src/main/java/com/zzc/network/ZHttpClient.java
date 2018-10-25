@@ -2,10 +2,11 @@ package com.zzc.network;
 
 import android.annotation.SuppressLint;
 
-import com.zzc.framework.common.LibContext;
-import com.zzc.framework.support.net.cache.CacheStrategyInterceptor;
-import com.zzc.framework.support.net.cache.NetworkInterceptor;
-import com.zzc.framework.support.net.support.GlobalRequestAdapter;
+import com.zzc.baselib.base.AppBase;
+import com.zzc.network.cache.CacheStrategyInterceptor;
+import com.zzc.network.cache.NetworkInterceptor;
+import com.zzc.network.support.GlobalRequestAdapter;
+import com.zzc.network.support.HttpLoggingInterceptor;
 
 import java.io.File;
 import java.io.IOException;
@@ -29,7 +30,6 @@ import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-import okhttp3.logging.HttpLoggingInterceptor;
 
 /**
  * @author Roye
@@ -57,7 +57,7 @@ public class ZHttpClient {
 
     private void init() {
         int totalCacheSize = 64 * 1024 * 1024; // 64M
-        Cache cache = new Cache(new File(LibContext.getApp().getCacheDir(), "okhttp"), totalCacheSize);
+        Cache cache = new Cache(new File(AppBase.app.getCacheDir(), "okhttp"), totalCacheSize);
 
         this.builder = new OkHttpClient.Builder()
                 .cache(cache)
@@ -97,9 +97,7 @@ public class ZHttpClient {
 
         interceptors.add(new CacheStrategyInterceptor());
 
-        HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
-        logging.setLevel(BuildConfig.DEBUG ? HttpLoggingInterceptor.Level.BODY : HttpLoggingInterceptor.Level.NONE);
-        interceptors.add(logging);
+        interceptors.add(new HttpLoggingInterceptor());
 
         builder.interceptors().addAll(interceptors);
     }

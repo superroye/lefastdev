@@ -13,9 +13,8 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.zzc.baselib.base.BaseApplication;
-import com.zzc.baselib.util.UIUtils;
 import com.zzc.baselib.R;
+import com.zzc.baselib.base.AppBase;
 import com.zzc.baselib.base.BaseApplication;
 import com.zzc.baselib.util.UIUtils;
 
@@ -62,12 +61,12 @@ public class AppCompatStatusBar {
         float minAlpha = 0.4f;
         if (scrollY >= statusBarHeight) {
             if (state != STATE_COLLAPSE) {
-                addStatusViewWithColor(activity, ContextCompat.getColor(BaseApplication.app, R.color.colorStatusbar));
+                addStatusViewWithColor(activity, ContextCompat.getColor(AppBase.app, com.zzc.design.style.R.color.colorStatusbar));
                 state = STATE_COLLAPSE;
             }
         } else if (scrollY == 0) {
             addStatusViewWithColor(activity,
-                    UIUtils.getColorWithAlpha(minAlpha, ContextCompat.getColor(BaseApplication.app, R.color.colorStatusbar)));
+                    UIUtils.getColorWithAlpha(minAlpha, ContextCompat.getColor(AppBase.app, com.zzc.design.style.R.color.colorStatusbar)));
             state = STATE_EXPAND;
         } else {
             if (state != STATE_TEMP) {
@@ -77,7 +76,7 @@ public class AppCompatStatusBar {
             float alpha = minAlpha + (1f - minAlpha) * scrollY / (float) statusBarHeight;
 
             addStatusViewWithColor(activity,
-                    UIUtils.getColorWithAlpha(alpha, ContextCompat.getColor(BaseApplication.app, R.color.colorStatusbar)));
+                    UIUtils.getColorWithAlpha(alpha, ContextCompat.getColor(AppBase.app, com.zzc.design.style.R.color.colorStatusbar)));
         }
     }
 

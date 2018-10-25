@@ -1,5 +1,7 @@
 package com.zzc.network;
 
+import com.zzc.network.support.GlobalRequestAdapter;
+
 import java.lang.annotation.Annotation;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
@@ -29,8 +31,6 @@ public abstract class ApiBuilder<T> {
         this.cls = (Class<T>) (((ParameterizedType) getClass()
                 .getGenericSuperclass()).getActualTypeArguments()[0]);
         httpClient = new ZHttpClient();
-        onBuild(httpClient);
-        httpClient.build();
     }
 
     public OkHttpClient getClient() {
@@ -42,9 +42,18 @@ public abstract class ApiBuilder<T> {
         return this;
     }
 
-    public abstract void onBuild(ZHttpClient httpClient);
+    public ApiBuilder setGlobalRequestAdapter(GlobalRequestAdapter globalRequestAdapter) {
+        httpClient.setGlobalRequestAdapter(globalRequestAdapter);
+        return this;
+    }
+
+    public OkHttpClient.Builder builder() {
+        return httpClient.builder();
+    }
 
     public T build() {
+        httpClient.build();
+
         Scheduler observeOn = AndroidSchedulers.mainThread();
         Retrofit retrofit = new Retrofit.Builder()
                 .client(httpClient.getClient())

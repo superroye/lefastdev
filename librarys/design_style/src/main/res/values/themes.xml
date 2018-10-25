@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>//标题栏背景
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>//状态栏背景
+        <item name="colorAccent">@color/colorAccent</item>//按钮文字颜色
+        <item name="colorControlActivated">@color/colorControlActivated</item>
+        <item name="actionBarSize">@dimen/toolbar_height</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="homeAsUpIndicator">@mipmap/nav_back</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="actionMenuTextColor">@color/textColorPrimary</item>
+        <item name="android:textColorHighlight">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/textInsignificant</item>
+        <item name="android:textCursorDrawable">@drawable/text_cursor_dark</item>
+        <item name="android:colorBackground">@color/colorBackground</item>//默认背景
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppThemeLib" parent="BaseAppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="AppTheme.Translucent" parent="BaseAppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="actionMenuTextColor">@color/textColorPrimary</item>
+        <item name="android:popupBackground">@color/windowBackground</item>
+        <item name="android:background">@color/windowBackground</item>
+
+    </style>
+
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat">
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+</resources>

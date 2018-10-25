@@ -30,7 +30,7 @@ public class AppData {
     public static String getUuid() {
         String uuid = getData().getValue(SP_KEY_UUID);
         if (TextUtils.isEmpty(uuid)) {
-            uuid = DeviceUtils.deviceUUId(LibContext.getApp());
+            uuid = DeviceUtils.deviceUUId(AppBase.app);
             getData().setValue(SP_KEY_UUID, uuid);
         }
 

@@ -2,7 +2,7 @@ package com.zzc.baselib.util;
 
 import android.content.res.Resources;
 
-import com.zzc.baselib.base.LibContext;
+import com.zzc.baselib.base.AppBase;
 
 public class ResourceUtils {
 
@@ -43,8 +43,8 @@ public class ResourceUtils {
     }
 
     public static int getRes(String type, String name) {
-        String packageName = LibContext.getApp().getPackageName();
-        Resources res = LibContext.getApp().getResources();
+        String packageName = AppBase.app.getPackageName();
+        Resources res = AppBase.app.getResources();
         int identifier = res.getIdentifier(name, type, packageName);
         if (identifier == 0) {
 

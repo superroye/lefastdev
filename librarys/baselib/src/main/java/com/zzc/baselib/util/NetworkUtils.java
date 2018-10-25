@@ -24,7 +24,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.util.Log;
 
-import com.zzc.baselib.base.LibContext;
+import com.zzc.baselib.base.AppBase;
 
 @SuppressLint("DefaultLocale")
 public class NetworkUtils {
@@ -80,7 +80,7 @@ public class NetworkUtils {
     }
 
     private static NetworkInfo getNetworkInfo() {
-        ConnectivityManager conn = (ConnectivityManager) LibContext.getApp().getSystemService(Context.CONNECTIVITY_SERVICE);
+        ConnectivityManager conn = (ConnectivityManager) AppBase.app.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo info = conn.getActiveNetworkInfo();
         return info;
     }

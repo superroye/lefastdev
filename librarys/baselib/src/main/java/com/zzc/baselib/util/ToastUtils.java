@@ -4,7 +4,7 @@ import android.text.TextUtils;
 import android.view.Gravity;
 import android.widget.Toast;
 
-import com.zzc.baselib.base.LibContext;
+import com.zzc.baselib.base.AppBase;
 
 /**
  * Created by liqi on 2016-2-23.
@@ -43,24 +43,24 @@ public class ToastUtils {
             UIRunner.runOnUI(new Runnable() {
                 @Override
                 public void run() {
-                    Toast.makeText(LibContext.getApp(), msg, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AppBase.app, msg, Toast.LENGTH_SHORT).show();
                 }
             }, 100);
         }
     }
 
     public static void showToast(int resId) {
-        String msg = LibContext.getApp().getString(resId);
+        String msg = AppBase.app.getString(resId);
         showToast(msg);
     }
 
     public static void showToastAtCenter(String msg) {
         if (isTooFast())
             return;
-        if (LibContext.getApp() == null)
+        if (AppBase.app == null)
             return;
 
-        Toast toast = Toast.makeText(LibContext.getApp(), msg, Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(AppBase.app, msg, Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();
     }
@@ -68,10 +68,10 @@ public class ToastUtils {
     public static void showToastAtCenter(int resId) {
         if (isTooFast())
             return;
-        if (LibContext.getApp() == null)
+        if (AppBase.app == null)
             return;
 
-        Toast toast = Toast.makeText(LibContext.getApp(), resId, Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(AppBase.app, resId, Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();
     }
@@ -79,9 +79,9 @@ public class ToastUtils {
     public static void showToastAtTop(String msg) {
         if (isTooFast())
             return;
-        if (LibContext.getApp() == null)
+        if (AppBase.app == null)
             return;
-        Toast toast = Toast.makeText(LibContext.getApp(), msg, Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(AppBase.app, msg, Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.TOP, 0, 200);
         toast.show();
     }
@@ -89,9 +89,9 @@ public class ToastUtils {
     public static void showToastAtTop(int resId) {
         if (isTooFast())
             return;
-        if (LibContext.getApp() == null)
+        if (AppBase.app == null)
             return;
-        Toast toast = Toast.makeText(LibContext.getApp(), resId, Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(AppBase.app, resId, Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.TOP, 0, 200);
         toast.show();
     }

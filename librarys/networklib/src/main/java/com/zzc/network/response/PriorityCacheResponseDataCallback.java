@@ -1,9 +1,9 @@
 package com.zzc.network.response;
 
-import com.zzc.framework.BuildConfig;
-import com.zzc.framework.base.listener.IProgressDialog;
-import com.zzc.framework.support.net.cache.CacheStrategyUtil;
-import com.zzc.framework.util.NetworkUtils;
+import com.zzc.baselib.ui.listener.IProgressDialog;
+import com.zzc.baselib.util.NetworkUtils;
+import com.zzc.network.BuildConfig;
+import com.zzc.network.cache.CacheStrategyUtil;
 
 import io.reactivex.functions.Consumer;
 import retrofit2.Call;
@@ -80,9 +80,6 @@ public abstract class PriorityCacheResponseDataCallback<Result extends IHttpResp
     public void onFailed(Result result) {
         DefaultResponseCodeHandle.handle(result);
         if (result.getMsg() != null) {
-            if (BuildConfig.DEBUG) {
-                //ToastUtils.showToast(result.getMsg());
-            }
         }
     }
 

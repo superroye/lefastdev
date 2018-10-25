@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dialog动画 -->
+    <style name="DialogAnim" parent="android:Animation.Dialog"/>
+
+    <style name="DialogAnim.Bottom">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_translate_bottom</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_translate_bottom</item>
+    </style>
+
+    <style name="DialogAnim.AD">
+        <item name="android:windowEnterAnimation">@null</item>
+    </style>
+
+    <!-- 自定义baseDialog样式 -->
+    <style name="Dialog" parent="android:Theme.Dialog">
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 自己想要的背景 -->
+        <item name="android:windowBackground">@drawable/bg_dialog</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 解决：原先对话框里面按钮显示和点击时的兼容性问题 -->
+        <item name="android:selectableItemBackground">@null</item>
+    </style>
+
+    <style name="Dialog.Transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:selectableItemBackground">@null</item>
+    </style>
+
+    <style name="Dialog.Transparent.NonDim">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Dialog.FullScreen" parent="Dialog.Transparent.NonDim">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Dialog.FullScreen.NonFloating">
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="Dialog.FullScreen.NonFloating.AD">
+        <item name="android:windowAnimationStyle">@style/DialogAnim.AD</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- 白色按钮 -->
+    <style name="ButtonWhite">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">#404040</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 菜单按钮 -->
+    <style name="ButtonMenu" parent="ButtonWhite">
+        <item name="android:background">@drawable/bg_common_item</item>
+        <item name="android:textColor">#191919</item>
+    </style>
+
+    <!-- 菜单按钮 -->
+    <style name="ButtonMenu.Selector">
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+
+    <style name="Common_Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+
+    <!-- activity切换动画-->
+    <style name="ActivityAnimation" parent="android:Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_close_exit</item>
+    </style>
+
+    <!-- 新版 设置页面的item布局样式 -->
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_bottom_out</item>
+    </style>
+
+    <style name="ActivityTransparent">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+</resources>

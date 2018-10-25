@@ -12,7 +12,7 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.location.LocationManager;
 import android.os.Bundle;
 
-import com.zzc.baselib.base.LibContext;
+import com.zzc.baselib.base.AppBase;
 
 import java.util.List;
 
@@ -143,7 +143,7 @@ public class ApplicationUtils {
 	 * @return
 	 */
 	public static String getSign(String packageName) {
-		PackageManager pm = LibContext.getApp().getPackageManager();
+		PackageManager pm = AppBase.app.getPackageManager();
 		PackageInfo info;
 		try {
 			info = pm
@@ -164,8 +164,8 @@ public class ApplicationUtils {
 	}
 
 	public static void run(String packageName, String dataKey, Bundle data) {
-		if (LibContext.getApp() != null) {
-			PackageManager packageManager = LibContext.getApp().getPackageManager();
+		if (AppBase.app != null) {
+			PackageManager packageManager = AppBase.app.getPackageManager();
 			if (packageManager != null) {
 				Intent intent = packageManager
 						.getLaunchIntentForPackage(packageName);
@@ -173,7 +173,7 @@ public class ApplicationUtils {
 					if (data != null && dataKey != null) {
 						intent.putExtra(dataKey, data);
 					}
-					LibContext.getApp().startActivity(intent);
+					AppBase.app.startActivity(intent);
 				}
 			}
 		}

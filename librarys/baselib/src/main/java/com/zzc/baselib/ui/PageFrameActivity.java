@@ -11,7 +11,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
 
-import com.zzc.baselib.base.BaseApplication;
+import com.zzc.baselib.base.AppBase;
 import com.zzc.baselib.R;
 
 /**
@@ -34,7 +34,7 @@ public class PageFrameActivity extends BaseActivity {
         Intent intent = new Intent(context, PageFrameActivity.class);
         intent.putExtra(EXTRA_CLASS, cls.getName());
         intent.putExtra(EXTRA_TITLE, title);
-        if (context == BaseApplication.app) {
+        if (context == AppBase.app) {
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         }
         if (extras != null)

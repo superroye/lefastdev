@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    按照Material Design标准 编写 http://design.1sters.com/material_design/layout/metrics-and-keylines.html
+    所有组件都与间隔为8dp的基准网格对齐。排版/文字（Type）与间隔为4dp的基准网格对齐。在工具条中的图标同样与间隔为4dp的基准网格对齐
+    -->
+    <dimen name="statusbar_height">24dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+
+    <dimen name="text_item_title_height">48dp</dimen>
+    <dimen name="text_item_height">72dp</dimen>
+
+    <dimen name="widget_margin_tiny">8dp</dimen>
+    <dimen name="widget_margin_normal">16dp</dimen>
+    <dimen name="widget_margin_large">24dp</dimen>
+    <dimen name="widget_margin_large_x">32dp</dimen>
+    <dimen name="widget_margin_large_xx">40dp</dimen>
+
+    <dimen name="widget_padding_tiny">8dp</dimen>
+    <dimen name="widget_padding_normal">16dp</dimen>
+    <dimen name="widget_padding_large">24dp</dimen>
+    <dimen name="widget_padding_large_x">32dp</dimen>
+    <dimen name="widget_padding_large_xx">40dp</dimen>
+
+    <dimen name="text_space">4dp</dimen>
+    <dimen name="text_line_space">4dp</dimen>
+
+    <dimen name="divider">0.5dp</dimen>
+    <dimen name="divider_large">8dp</dimen>
+
+    <dimen name="font_min">8dp</dimen>
+    <dimen name="font_tiny">12dp</dimen>
+    <dimen name="font_tiny_x">11dp</dimen>
+    <dimen name="font_normal">14dp</dimen>
+    <dimen name="font_medium">16dp</dimen>
+    <dimen name="font_large">18dp</dimen>
+    <dimen name="font_large_x">20dp</dimen>
+    <dimen name="font_large_xx">24dp</dimen>
+
+
+
+</resources>

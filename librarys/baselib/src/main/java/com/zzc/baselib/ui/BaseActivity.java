@@ -23,7 +23,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.zzc.baselib.BuildConfig;
-import com.zzc.baselib.R;
 import com.zzc.baselib.ui.listener.IProgressDialog;
 import com.zzc.baselib.ui.widget.statusbar.AppCompatStatusBar;
 import com.zzc.baselib.util.UIUtils;
@@ -94,7 +93,7 @@ public class BaseActivity extends AppCompatActivity implements IProgressDialog {
     }
 
     protected void setStatusBar() {
-        setStatusBar(ContextCompat.getColor(this, R.color.colorStatusbar));
+        setStatusBar(ContextCompat.getColor(this, com.zzc.design.style.R.color.colorStatusbar));
     }
 
     public void fullScreen() {
@@ -146,7 +145,7 @@ public class BaseActivity extends AppCompatActivity implements IProgressDialog {
     public void finish() {
         super.finish();
         if (isLoadExitAnim) {
-            super.overridePendingTransition(R.anim.idle, R.anim.slide_right_out);
+            super.overridePendingTransition(com.zzc.design.style.R.anim.idle, com.zzc.design.style.R.anim.slide_out_right);
         }
     }
 
@@ -186,7 +185,7 @@ public class BaseActivity extends AppCompatActivity implements IProgressDialog {
 
     private void anim() {
         if (isLoadEnterAnim) {
-            super.overridePendingTransition(R.anim.slide_left_in, R.anim.idle);
+            super.overridePendingTransition(com.zzc.design.style.R.anim.slide_in_left, com.zzc.design.style.R.anim.idle);
         }
     }
 

@@ -1,55 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="BaseAppTheme">
-        <!--
-        <item name="android:windowBackground">@drawable/start_activity_bg</item>
-        -->
-    </style>
-
-    <style name="AppTheme.NoTitleBar" parent="BaseAppTheme">
-        <item name="android:windowNoTitle">true</item>
-    </style>
-
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
-    <style name="BaseDialog" parent="Theme.AppCompat.Light.Dialog">
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowFrame">@null</item>
-        <!-- 边框 -->
-        <item name="android:windowIsFloating">true</item>
-        <!-- 是否浮现在activity之上 -->
-        <item name="android:windowIsTranslucent">true</item>
-        <!-- 半透明 -->
-        <item name="android:background">@android:color/transparent</item>
-        <!-- 背景透明 -->
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <!-- 背景透明 -->
-    </style>
-
-    <style name="Common_Divider">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/divider</item>
-        <item name="android:background">@color/divider</item>
-    </style>
-    <!-- 自定义baseDialog样式 -->
-    <style name="Dialog" parent="android:Theme.Dialog">
-        <!-- 无标题 -->
-        <item name="android:windowNoTitle">true</item>
-        <!-- 自己想要的背景 -->
-        <item name="android:windowBackground">@drawable/shape_bg_dialog</item>
-        <!-- 模糊 -->
-        <item name="android:backgroundDimEnabled">true</item>
-        <!-- 解决：原先对话框里面按钮显示和点击时的兼容性问题 -->
-        <item name="android:selectableItemBackground">@null</item>
-    </style>
-
-    <style name="Dialog.Transparent">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:selectableItemBackground">@null</item>
-    </style>
 
 </resources>

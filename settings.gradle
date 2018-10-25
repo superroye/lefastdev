@@ -1,1 +1,5 @@
-include ':app', ":librarys", ':librarys:baselib', ':librarys:easycomponents', ':librarys:networklib'
+include ':app', ":librarys",
+        ':librarys:baselib',
+        ':librarys:easycomponents',
+        ':librarys:networklib',
+        ':librarys:design_style'

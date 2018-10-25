@@ -11,7 +11,7 @@ public class CommonData {
     }
 
     private SharedPreferences getSp() {
-        return LibContext.getApp().getSharedPreferences(mSpFileName, Context.MODE_PRIVATE);
+        return AppBase.app.getSharedPreferences(mSpFileName, Context.MODE_PRIVATE);
     }
 
     public void setValue(String key, String value) {

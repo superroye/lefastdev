@@ -8,7 +8,7 @@ import android.preference.PreferenceManager;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.zzc.baselib.base.LibContext;
+import com.zzc.baselib.base.AppBase;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -45,7 +45,7 @@ public class SharedPrefUtils {
                 result = prefs;
                 if (result == null) {
                     result = prefs = PreferenceManager
-                            .getDefaultSharedPreferences(LibContext.getApp());
+                            .getDefaultSharedPreferences(AppBase.app);
                 }
             }
         return result;
