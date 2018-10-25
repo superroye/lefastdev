@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.zzc.network.support;
+package com.zzc.network.cache;
 
 import com.zzc.baselib.base.AppBase;
 
@@ -149,9 +149,9 @@ public final class HttpLoggingInterceptor implements Interceptor {
     @Override
     public Response intercept(Chain chain) throws IOException {
         if (AppBase.DEBUG) {
-            this.level = Level.NONE;
-        } else {
             this.level = Level.BODY;
+        } else {
+            this.level = Level.NONE;
         }
         Level level = this.level;
 

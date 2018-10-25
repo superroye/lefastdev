@@ -1,7 +1,5 @@
 package com.zzc.easycomponents.network;
 
-import android.support.annotation.RestrictTo;
-
 import com.zzc.network.ApiBuilderOuter;
 import com.zzc.network.support.GlobalRequestAdapter;
 
@@ -12,7 +10,6 @@ import java.util.List;
  * @author Roye
  * @date 2018/10/19
  */
-@RestrictTo(RestrictTo.Scope.LIBRARY_GROUP)
 public class Network {
 
     private Network() {

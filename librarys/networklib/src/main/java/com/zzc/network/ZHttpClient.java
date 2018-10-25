@@ -6,7 +6,7 @@ import com.zzc.baselib.base.AppBase;
 import com.zzc.network.cache.CacheStrategyInterceptor;
 import com.zzc.network.cache.NetworkInterceptor;
 import com.zzc.network.support.GlobalRequestAdapter;
-import com.zzc.network.support.HttpLoggingInterceptor;
+import com.zzc.network.cache.HttpLoggingInterceptor;
 
 import java.io.File;
 import java.io.IOException;

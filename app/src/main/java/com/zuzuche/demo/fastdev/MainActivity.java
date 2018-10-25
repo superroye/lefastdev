@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.zuzuche.demo.fastdev.network.CoolAPi;
-import com.zzc.easycomponents.EasyComponents;
 import com.zzc.easycomponents.Easys;
 import com.zzc.network.support.GlobalRequestAdapter;
 
