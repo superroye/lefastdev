@@ -189,6 +189,8 @@ public class BaseActivity extends AppCompatActivity implements IProgressDialog {
         }
     }
 
+
+
     @Override
     public void showLoading(String text) {
         Fragment fragment = getSupportFragmentManager().findFragmentByTag("progressDialog");

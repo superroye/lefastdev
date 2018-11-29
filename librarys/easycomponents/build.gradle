@@ -3,8 +3,6 @@ apply plugin: 'com.android.library'
 android {
     compileSdkVersion 27
 
-
-
     defaultConfig {
         minSdkVersion 27
         targetSdkVersion 27
@@ -26,11 +24,12 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api project(":librarys:easycommon")
 
-    implementation project(":librarys:baselib")
-
-    api project(":librarys:networklib")
+    annotationProcessor project(':librarys:easycompiler')
 
     implementation "com.github.bumptech.glide:glide:${glideVersion}"
     implementation 'jp.wasabeef:glide-transformations:3.0.1'
+
+    testImplementation 'junit:junit:4.12'
 }

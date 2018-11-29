@@ -22,6 +22,12 @@
     <dimen name="widget_padding_large_x">32dp</dimen>
     <dimen name="widget_padding_large_xx">40dp</dimen>
 
+    <dimen name="widget_edittext_height_tiny">40dp</dimen>
+    <dimen name="widget_edittext_height_normal">48dp</dimen>
+
+    <dimen name="widget_text_height_tiny">40dp</dimen>
+    <dimen name="widget_text_height_normal">48dp</dimen>
+
     <dimen name="text_space">4dp</dimen>
     <dimen name="text_line_space">4dp</dimen>
 

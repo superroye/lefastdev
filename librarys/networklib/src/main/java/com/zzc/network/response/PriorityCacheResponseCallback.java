@@ -3,6 +3,7 @@ package com.zzc.network.response;
 import com.zzc.baselib.ui.listener.IProgressDialog;
 import com.zzc.baselib.util.NetworkUtils;
 import com.zzc.network.cache.CacheStrategyUtil;
+import com.zzc.network.support.RequestKey;
 
 import io.reactivex.functions.Consumer;
 import retrofit2.Call;
@@ -39,6 +40,10 @@ public abstract class PriorityCacheResponseCallback<Result> implements Callback<
 
     @Override
     public void onResponse(Call<Result> call, final Response<Result> response) {
+        if (response.code() >= 400 || response.body() == null) {
+            onFinish();
+            return;
+        }
         okhttp3.Response networkResopnse = response.raw().networkResponse();
         if (networkResopnse != null) {
             if (lastCacheResult == null) {

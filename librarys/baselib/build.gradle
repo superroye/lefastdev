@@ -29,6 +29,7 @@ dependencies {
 
 
     implementation project(":librarys:design_style")
+    implementation project(":librarys:easycomponents")
 
     api "com.android.support:appcompat-v7:${supportLibVersion}"
     api "com.android.support:design:${supportLibVersion}"
@@ -52,5 +53,7 @@ dependencies {
     api "com.android.support:multidex:${multidexVersion}"
 
     api "com.android.support.constraint:constraint-layout:${constraintVersion}"
+
+    annotationProcessor project(':librarys:easycompiler')
 
 }

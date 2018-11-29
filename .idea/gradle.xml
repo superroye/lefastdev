@@ -12,6 +12,8 @@
             <option value="$PROJECT_DIR$/librarys" />
             <option value="$PROJECT_DIR$/librarys/baselib" />
             <option value="$PROJECT_DIR$/librarys/design_style" />
+            <option value="$PROJECT_DIR$/librarys/easycommon" />
+            <option value="$PROJECT_DIR$/librarys/easycompiler" />
             <option value="$PROJECT_DIR$/librarys/easycomponents" />
             <option value="$PROJECT_DIR$/librarys/networklib" />
           </set>

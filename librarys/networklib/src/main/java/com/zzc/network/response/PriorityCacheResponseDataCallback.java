@@ -40,6 +40,10 @@ public abstract class PriorityCacheResponseDataCallback<Result extends IHttpResp
 
     @Override
     public void onResponse(Call<Result> call, final Response<Result> response) {
+        if (response.code() >= 400 || response.body() == null) {
+            onFinish();
+            return;
+        }
         okhttp3.Response networkResopnse = response.raw().networkResponse();
         if (networkResopnse != null) {
             if (lastCacheResult == null) {

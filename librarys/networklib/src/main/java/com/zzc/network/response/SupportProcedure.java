@@ -3,6 +3,7 @@ package com.zzc.network.response;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.zzc.baselib.support.rx.RxSimple;
 import com.zzc.baselib.ui.listener.IProgressDialog;
 import com.zzc.baselib.util.NetworkUtils;
 
@@ -75,19 +76,29 @@ public class SupportProcedure<Result extends IHttpResponse, Data> {
 
     public void showLoading() {
         if (!TextUtils.isEmpty(loadingText) && mProgressDialog != null) {
-            IProgressDialog progress = mProgressDialog.get();
-            if (progress != null) {
-                progress.showLoading(loadingText);
-            }
+            RxSimple.runOnUIThread(new Runnable() {
+                @Override
+                public void run() {
+                    IProgressDialog progress = mProgressDialog.get();
+                    if (progress != null) {
+                        progress.showLoading(loadingText);
+                    }
+                }
+            });
         }
     }
 
     public void hideLoading() {
         if (!TextUtils.isEmpty(loadingText) && mProgressDialog != null) {
-            IProgressDialog progress = mProgressDialog.get();
-            if (progress != null) {
-                progress.hideLoading();
-            }
+            RxSimple.runOnUIThread(new Runnable() {
+                @Override
+                public void run() {
+                    IProgressDialog progress = mProgressDialog.get();
+                    if (progress != null) {
+                        progress.hideLoading();
+                    }
+                }
+            });
         }
     }
 

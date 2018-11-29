@@ -10,17 +10,35 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        //use java 1.8 with Android Studio 3.0+
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    // 这个是解决lint报错的代码
+    lintOptions {
+        // 防止在发布的时候出现因MissingTranslation导致Build Failed!
+        disable 'MissingTranslation'
+        disable 'ExtraTranslation'
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    annotationProcessor project(':librarys:easycompiler')
 
     implementation project(":librarys:baselib")
     implementation project(":librarys:easycomponents")
+    implementation project(":librarys:networklib")
+
+
 }

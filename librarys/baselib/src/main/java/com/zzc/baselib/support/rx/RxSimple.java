@@ -24,4 +24,14 @@ public class RxSimple {
                 .observeOn(AndroidSchedulers.mainThread());
         return observable;
     }
+
+    public static void runOnUIThread(final Runnable runnable) {
+        Observable.just("").map(new Function<String, String>() {
+            @Override
+            public String apply(String s) throws Exception {
+                runnable.run();
+                return "";
+            }
+        }).subscribeOn(AndroidSchedulers.mainThread()).subscribe();
+    }
 }

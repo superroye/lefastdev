@@ -26,6 +26,7 @@ public class ApiBuilderOuter<T> {
 
     private Class<T> cls;
     private String baseUrl;
+    private boolean mIsSubscribeOnUiThread = true;
 
     public ApiBuilderOuter() {
         httpClient = new ZHttpClient();
@@ -35,13 +36,18 @@ public class ApiBuilderOuter<T> {
         return httpClient.getClient();
     }
 
-    public ApiBuilderOuter forType(Class<T> cls){
+    public ApiBuilderOuter forType(Class<T> cls) {
         this.cls = cls;
         return this;
     }
 
     public ApiBuilderOuter baseUrl(String baseUrl) {
         this.baseUrl = baseUrl;
+        return this;
+    }
+
+    public ApiBuilderOuter isSubscribeOnUiThread(boolean isSubscribeOnUiThread) {
+        this.mIsSubscribeOnUiThread = isSubscribeOnUiThread;
         return this;
     }
 
@@ -58,6 +64,9 @@ public class ApiBuilderOuter<T> {
         httpClient.build();
 
         Scheduler observeOn = AndroidSchedulers.mainThread();
+        if (!mIsSubscribeOnUiThread) {
+            observeOn = Schedulers.computation();
+        }
         Retrofit retrofit = new Retrofit.Builder()
                 .client(httpClient.getClient())
                 .addCallAdapterFactory(new ObserveOnMainCallAdapterFactory(observeOn))

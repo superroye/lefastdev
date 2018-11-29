@@ -2,4 +2,6 @@ include ':app', ":librarys",
         ':librarys:baselib',
         ':librarys:easycomponents',
         ':librarys:networklib',
-        ':librarys:design_style'
+        ':librarys:design_style',
+        ':librarys:easycompiler',
+        ':librarys:easycommon'

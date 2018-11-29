@@ -1,6 +1,5 @@
 package com.zzc.network.support;
 
-import okhttp3.FormBody;
 import okhttp3.HttpUrl;
 import okhttp3.Request;
 
@@ -13,6 +12,4 @@ public interface GlobalRequestAdapter {
     void addHeader(Request.Builder builder);
 
     void addQueryParams(HttpUrl.Builder httpUrlBuilder);
-
-    void addPostParams(FormBody.Builder builder);
 }
